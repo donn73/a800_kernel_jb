@@ -1,0 +1,38 @@
+How to compile
+--------------
+1. cd kernel
+2. Check compiler path at kernel/newbuild.sh & kernel/clean.sh and replace your own.
+3. ./newbuild.sh
+4. compiled kernel and modules goes to build_result directory.
+
+Get working lcm, touchpanel, cell, wifi, bt, gps, mic, phone speaker, earpiece, fmradio but still need to fix audio (speaker) and camera.
+The current touchpanel and lcm driver are not really good.
+Still need to fix bma222 calibration.
+
+
+Camera
+------
+The original camera lens are
+FM50AF
+DW9714AAF (unable to find a proper driver)
+
+Original camera sensors :
+HI542MIPI
+HI542_MIPI_RAW
+OV5647MIPI
+
+Speaker
+-------
+Seem No problem in kernel driver or gpio pinout, must be a ROM/library issue.
+I was trying 4.0.13 kernel from OT997D source, the speaker driver is amp_yad and gpio pinout is GPI68.
+
+Recomended build environment
+----------------------------
+Ubuntu 10.04.4 (64-bit)
+arm-linux-androideabi-gcc 4.6 (get from AOSP)
+host gcc 4.4.3
+jdk 1.6.0_29
+
+Test this kernel with P770 ROM, only replace kernel & modules with new one.
+
+
