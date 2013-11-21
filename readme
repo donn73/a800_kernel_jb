@@ -24,7 +24,7 @@ OV5647MIPI
 Speaker
 -------
 Seem No problem in kernel driver or gpio pinout, must be a ROM/library issue.
-I was trying 4.0.13 kernel from OT997D source, the speaker driver is amp_yad and gpio pinout is GPI68.
+I was trying 4.0.13 kernel from OT997D source, the speaker driver is amp_yad and gpio pinout is GPIO68.
 
 Recomended build environment
 ----------------------------
